@@ -157,5 +157,21 @@ label chapter_0_driving_home:
     tsukune "Wait, did you want to go to the gym with me later?"
     alex "I would, but I wanna relax when I get home. I'm feeling pretty tired. Maybe next time?"
     tsukune "No big deal, I'll catch you later!"
+    # play sound "car_driving.mp3"
+    scene black with fade
+    jump chapter_0_alex_return_home
 
+label chapter_0_alex_return_home:
+    scene bg_alex_apartment_living_room with fade
+    # play sound "door_close.mp3"
+    alex "Well, now that the day is over, I can spend some time relaxing."
+    # play sound "thud.mp3"
+    "*thud*"
+    alex "... That Claudia girl must still be unpacking her boxes. Hopefully she's not working herself too hard."
+    # play sound "rubbing(?).mp3"
+    "*shff shff shff shff*"
+    alex "Whatever she's doing, I hope she keeps the noise low once it gets later in the evening."
+    alex "I should probably journal and then make something for me to eat."
+    journal "4:17 PM"
+    journal "Today went pretty well. I should probably write some things I'm grateful for today. I'm grateful that I got to work on time, I'm grateful that I met Claudia since she might become a new friend, and I'm grateful that I got to drive Tsukune home from work while his car is in the shop. I"
     return
